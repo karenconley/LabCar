@@ -1,0 +1,191 @@
+<!-- Suelta tus manos y tu mente para solucionar este reto -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab-<ar</title>
+	<!--Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<!-- Mi CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+
+<body>
+<!-- Menú de navegación -->
+<nav>
+	<div class="nav-wrapper white">
+		<div class="container">
+			<img id="logo1" src="assets/images/logoForma.png" alt="">
+   	   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down ">
+				<li><a href="#">Viaja</a></li>
+				<li><a href="#">Conduce</a></li>
+				<li class="modal-trigger" data-target="modal1"><a href="#">Inicia Sesión</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a>Viaja</a></li>
+				<li><a>Conduce</a></li>
+				<li><a>Inicia Sesión</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Section 1 -->
+<section class="disfruta">
+	<div class="row" id="section1"> <!-- CORREGIR ******* s m l-->
+		<div class="col s8 m5 l5 push-l7 #ffab00 amber accent-4 white-text">
+			<div class="yellow-box hide-on-med-and-down">
+				<h4>Disfruta del viaje<br>Eres dueño de tu tiempo</h4>
+				<h5>Viaja con  
+				<img src="assets/images/logoBlanco.png"></h5>
+				<button class="uppercase waves-effect waves-light btn grey lighten-5 black-text" id="btn1">Regístrate</button>
+				<div class="row valign-wrapper">
+					<hr class="col l5">
+					<p class="col 2">O bien</p>
+					<hr class="col l5">
+				</div>
+				<button class="waves-effect waves-light btn grey lighten-5 black-text" id="btn2">Conviértete en un conductor</button>
+			</div>
+		</div>
+		<!-- Responsive -->
+		<div class="col s10 offset-s2 form amber darken-1 hide-on-large-only">
+			<h5>Comienza a viajar con <img src="assets/images/logoBlanco.png" alt="LabCar"></h5>
+			<button>Descarga el app</button>
+		</div>
+	</div>
+</section>
+
+<!-- Section 2 -->
+<section class="descarga container-fluid amber darken-1">
+	<div class="row">
+		<div class="col s12 l10 white-border valign-wrapper">
+			<!-- Responsive -->
+			<div class="col s12 m12 l7 center-align" id="nueva-app">
+				<p class="hide-on-large-only">La nueva app</p>
+				<img src="assets/images/iPhone6Plus.png" alt="iPhone" class="responsive-img">
+				<p class="hide-on-large-only">Llega a tu destino aun más rápido</p>
+			</div>
+			<div class="col l5 hide-on-med-and-down white-text">
+				<h5>Descarga la nueva app</h5>
+				<h6>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</h6>
+				<h6>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente dónde ir.</h6>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Section 3 -->
+<section class="conduce">
+	<div class="row">
+		<div class="col l4 push-l8 s12 white-text">
+			<h5>Conduce cuando quieras</h5>
+			<h6>LabCar es una opción flexible para alcanzar tus metas financieras</h6>
+			<!-- Botón "conviértete en conductor" -->
+			<button class="waves-effect waves-light btn #ffab00 amber accent-4" id="btn3">Conviértete en conductor</button>
+		</div>
+	</div>
+</section>
+	
+<!-- section 4 -->
+<section class="tarifas #ffab00 amber accent-4 white-text">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l5" id="row3">
+				<h5>Tarifas</h5>
+				<h6>Consulta las tarifas LabCar aquí</h6>
+				<div class="">
+					<form>
+						<div class="row">
+							<div class="input-field">
+								<img src="assets/images/shape.png" alt="" class="prefix">
+								<input type="text" class="validate" placeholder="Ingrese su punto de partida">
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field">
+								<img src="assets/images/shape2.png" alt="" class="prefix">
+								<input type="text" class="validate" placeholder="Ingrese su destino">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 l12 center-align">
+								<button id="btn4">¡TRAZAR RUTA!</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+				<!-- Google Maps -->
+				<div class="col s12 m12 l6 offset-l1 right-align">
+					<div id="map-canvas" class="map frame-container">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6658.522509805169!2d-70.6410055019173!3d-33.442499391904875!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512475995032" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+	</div>
+</section>
+
+<!-- section 5 -->
+<footer class="LabCar">
+	<div class="row">
+		<!-- logo -->
+		<div class="col l12">
+			<img src="assets/images/logoBlanco.png" alt="" id="lab2">
+		</div>
+		<!-- hr -->
+		<div class="divider col  s10 m10 l10"></div>
+		<!-- lista 1 -->
+		<div class="col s4 m4 l4 push-l3 push-m2 push-s1">
+			<ul>
+				<li>Viaja</li>
+				<li>Conduce</li>
+				<li>Ciudades</li>
+				<li>Ciudades</li>
+				<li>Entregas</li>
+				<li>¿Cómo funciona?</li>
+				<li>Países</li>
+				<li>Seguridad</li>
+			</ul>
+		</div>
+		<!-- lista 2 -->
+		<div class="col s4 m4 l4 push-l2">
+			<ul>
+				<li>Oportunidades</li>
+				<li>Nuestra historia</li>
+				<li>API de LabCar</li>
+				<li>Eventos</li>
+				<li>Desarrolladores</li>
+				<li>Servicios</li>
+				<li>Laboratoria</li>
+				<li>Coders</li>
+			</ul>
+		</div>
+		<!-- Logos App Stores -->
+		<div class="col s1 m1 l1">
+			<div class="logos">
+				<img class="app" src="assets/images/appstore.png" alt="">
+				<img class="app" src="assets/images/enBadgeWebGeneric.png" alt="">
+			</div>
+		</div>
+		<div class="divider col s10 m10 l10"></div>
+	</div> <!-- cierre Row -->
+
+	<div class="col l12"></div>
+	<h6> © 2017 LabCar technologies Inc.</h6>
+</footer>
+
+
+
+
+	<!-- Materialize -->
+	<script src="js/materialize.min.js"></script>
+	<!-- JQuery -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+</body>
+</html>
